@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bigmeow/Blog2.git"
+    "url": "git+https://github.com/xiaoqi7777/Blog.git"    
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bigmeow/Blog2/issues"
+    "url": "https://github.com/xiaoqi7777/Blog/issues"
   },
-  "homepage": "https://github.com/bigmeow/Blog2#readme",
+  "homepage": "https://github.com/xiaoqi7777/Blog#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -50,6 +50,7 @@
     "express": "^4.15.4",
     "express-session": "^1.15.5",
     "jquery": "^3.2.1",
+    "jquery-validation": "^1.17.0",
     "md5.js": "^1.3.4",
     "mongoose": "^4.11.7",
     "swig": "^1.4.2"

@@ -75,7 +75,7 @@ if (isDev) {
     reload(app); //通知浏览器刷新 
     server.listen(8080, () => {
 
-    
+
         //告诉 browserSync  我们监听哪个目录（配置）
         browserSync.init({
             ui: false,
@@ -86,7 +86,7 @@ if (isDev) {
             files: './server/views/**', //监听被修改的代码
             port: 3000 //服务器启动的端口
         }, () => console.log('开发模式，代理服务器启动成功'));
-            
+
 
     });
 
