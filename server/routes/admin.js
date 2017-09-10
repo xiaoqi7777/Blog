@@ -61,6 +61,11 @@ router.get('/article/pagination', (req, res, next) => {
     Article.find().sort({
         [sort]:order,//用[]加进去就是变量 不然sort就是一个固定的值 属性值不用加[]
     }).skip(offset).limit(limit).then(articles => {
+        articles.map((item,index)=>{
+            console.log(item.body.replace(/<[^>]+>/g,""));
+            item.body=item.body.replace(/<[^>]+>/g,"").substring(0,50);
+            return   
+        })
         responseMesg.success = true;
         responseMesg.data.rows = articles
         res.json(responseMesg);

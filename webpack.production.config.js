@@ -54,7 +54,9 @@ module.exports={
         ]
     },
     plugins:[
-        new CleanWebpackPlugin(['public']),
+        new CleanWebpackPlugin(['public'],{
+            exclude:['ueditor']
+        }),
         //用来独立css文件和路径的
         new ExtractTextPlugin({
             filename: function (getPath) {

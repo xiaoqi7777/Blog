@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xiaoqi7777/Blog.git"    
+    "url": "git+https://github.com/xiaoqi7777/Blog.git"
   },
   "author": "",
   "license": "ISC",
@@ -53,6 +53,7 @@
     "jquery-validation": "^1.17.0",
     "md5.js": "^1.3.4",
     "mongoose": "^4.11.7",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "ueditor": "^1.2.3"
   }
 }

@@ -1,2 +1,4 @@
 node_modules
-public
+public/*
+!public/ueditor
+public/ueditor/upload/img/*

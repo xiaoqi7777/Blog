@@ -1,3 +1,5 @@
+//初始化编辑器
+ var ue = UE.getEditor('body');
 //前端校验
 require('jquery-validation');
 //汉化
