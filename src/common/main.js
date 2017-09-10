@@ -16,8 +16,10 @@ if(modelPath){
        console.log('模块加载失败',err);
    })
 }
-
- 
+//不是后台界面或者登陆界面
+ if(!location.pathname.startsWith('/admin')&&!location.pathname.startsWith('/login')){
+    console.log('111')
+ }
 
 
 

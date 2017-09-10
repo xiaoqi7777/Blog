@@ -54,6 +54,7 @@ router.post('/user/check',(request,response,next)=>{
 
         }
     })
-})
+});
+
 
 module.exports=router;

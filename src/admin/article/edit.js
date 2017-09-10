@@ -54,7 +54,7 @@ $('form').validate({
             data:{
                 id:$('#id').val(),
                 title:$('#title').val(),
-                body:$('#body').val(),
+                body:ue.getContent(),
             },
             success:function(resp){
                 if(resp.success){
