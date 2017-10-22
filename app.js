@@ -20,9 +20,9 @@ app.use(session({
 //处理前端的POST请求的配置
 //处理前端传给后端的表单格式数据（表单提交、ajax提交）  fromdata
 app.use(bodyParser.urlencoded({
-    extended: false
-}))
-//处理前端以json格式传给后端的数据 application/json 
+        extended: false
+    }))
+    //处理前端以json格式传给后端的数据 application/json 
 app.use(bodyParser.json());
 
 
@@ -30,12 +30,12 @@ const ueditor = require("ueditor");
 const path = require('path');
 //将public/ueditor 目录静态化
 app.use('/ueditor', express.static(__dirname + '/public/ueditor'));
-app.use("/ueditor/ue", ueditor(path.join(__dirname, 'public'), function (req, res, next) {
+app.use("/ueditor/ue", ueditor(path.join(__dirname, 'public'), function(req, res, next) {
     //客户端上传文件设置
     var imgDir = '/ueditor/upload/img'
-     var ActionType = req.query.action;
+    var ActionType = req.query.action;
     if (ActionType === 'uploadimage' || ActionType === 'uploadfile' || ActionType === 'uploadvideo') {
-        var file_url = imgDir;//默认图片上传地址
+        var file_url = imgDir; //默认图片上传地址
         /*其他上传格式的地址*/
         if (ActionType === 'uploadfile') {
             file_url = '/ueditor/upload/file'; //附件
